@@ -22,7 +22,7 @@ body {
 .navbar {
   height: 64px;
   width: 100%;
-  background: linear-gradient(90deg, #0a1f44, #0b2b5e);
+  background: #0B2347;
   display: flex;
   align-items: center;
 }
@@ -32,7 +32,7 @@ body {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 0 9rem;
+  padding: 0 6rem;
 }
 
 .nav-left {
@@ -51,8 +51,19 @@ body {
 .navbar nav > div:nth-child(3) {
   width: 40px;
 }
-.back-arrow {
-  font-size: 20px;
+.back-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 5px;
+  text-decoration:none !important;
+}
+
+.back-text{
+    font-size: 15px;
+    color: white;
 }
 
 .logo {
@@ -69,11 +80,13 @@ body {
 
 .stepper-wrapper {
   background: #fff;
-  padding: 24px 16px;
+  padding: 3rem 6rem;
+  padding-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 .stepper-container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: auto;
   position: relative;
   padding: 0 12px;
@@ -90,7 +103,7 @@ body {
   position: absolute;
   height: 100%;
   width: 33.33%;
-  background: #007bff;
+  background: #0078D4;
   left: 0;
   top: 0;
 }
@@ -142,7 +155,94 @@ body {
   border-color: #007bff;
 }
 
+.trip-details {
+  background: #fff;
+  margin-top: 1rem;
+}
+
+.trip-details-bar {
+  display: grid;
+  grid-template-columns: auto 1px auto 1px auto auto;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 6rem;
+}
+
+.item {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.label {
+  font-weight: 600;
+  color: #0a1f44;
+}
+
+.value {
+  color: #666;
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background: #ddd;
+}
+
+.edit-btn {
+  margin-left: auto;
+  padding: 5px 14px;
+  border: 1px solid #0078D4;
+  background: transparent;
+  color: #0078D4;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.trip-details-card {
+  display: none;
+  padding: 24px 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0B2347;
+}
+
+.card-row {
+    margin-bottom: 22px;
+}
+
+.card-row .label {
+    display: block;
+    color: #0B2347;
+  margin-bottom: 6px;
+  line-height: 22.5px;
+  font-size: 15px;
+}
+
+.card-row .value {
+    color: #636363;
+    line-height: 22.5px;
+  font-size: 15px;
+}
+
 @media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 925px) {
   .stepper-wrapper {
     padding: 20px 10px;
   }
@@ -154,6 +254,13 @@ body {
   }
   .navbar nav {
     padding: 0 1rem;
+  }
+    .trip-details-bar {
+    display: none;
+  }
+
+  .trip-details-card {
+    display: block;
   }
 }
 
@@ -168,3 +275,4 @@ body {
     font-size: 10px;
   }
 }
+
