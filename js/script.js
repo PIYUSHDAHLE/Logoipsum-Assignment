@@ -1,13 +1,14 @@
+const agesBox = document.getElementById("ages");
 
-const agesBox=document.getElementById("ages");
-
-function addAge(){
- const age=prompt("Enter traveller age:");
- if(!age) return;
- const span=document.createElement("span");
- span.textContent=age;
- agesBox.appendChild(span);
+function addAge() {
+  const age = prompt("Enter traveller age:");
+  if (!age) return;
+  const div = document.createElement("div");
+  div.className = "age-item";
+  div.textContent = age;
+  agesBox.appendChild(div);
 }
+
 
 function switchTab(btn){
  document.querySelectorAll(".tabs button")

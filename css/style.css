@@ -352,22 +352,29 @@ input {
   cursor: pointer;
 }
 
-.age-list{
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #E6E3E0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .age-box {
   display: flex;
-  gap: 5px;
-  padding: 10px 0px;
-  align-items:start;
+  gap: 8px;
+  padding: 10px 0;
+  align-items: flex-start;
+}
+
+.ages-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.age-item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #E6E3E0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background: #fff;
 }
 
 .add-btn {
@@ -377,6 +384,7 @@ input {
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
+  line-height: 1;
 }
 
 .submit {
