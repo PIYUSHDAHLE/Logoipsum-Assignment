@@ -4,12 +4,14 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+
 html,
 body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
 }
+
 .hero {
   background-image: url("../images/backgrond-image.jpg");
   background-size: cover;
@@ -20,6 +22,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.mobile-submenu li a{
+  text-decoration: none !important;
+  color: #222425 !important;
 }
 
 .navbar {
